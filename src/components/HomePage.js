@@ -1,20 +1,26 @@
 import React from 'react';
 import { useEffect } from 'react';
+import './Styles/Home.css'
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchPlayers } from '../Redux/FetchStats';
+import { fetchCrypto } from '../Redux/FetchStats';
 
 const HomePage = () => {
-    const getAllPlayers = useSelector((state) => state.players);
+    const getAllCryptos = useSelector((state) => state.cryptos);
+    console.log(getAllCryptos);
     const dispatch = useDispatch();
 
     useEffect(() => {
-        if (!getAllPlayers.length) dispatch(fetchPlayers())
+        if (!getAllCryptos.length) dispatch(fetchCrypto())
     }, [dispatch])
 
     return (
         <div>
             <ul>
-                {getAllPlayers.map((player) => (<li key={player.id}>{player.firstN} {player.lastN} {' '} {player.team}</li>))}
+                {getAllCryptos.map((crypto) => (
+                <li key={crypto.cryptoSymb}>
+                 {crypto.cryptoSymb}  
+                 {crypto.priceChangePercent}%
+                </li>))}
             </ul>
         </div>
     );

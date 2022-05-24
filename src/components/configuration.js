@@ -1,9 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
-import playersReducer from '../Redux/FetchStats';
+import cryptoReducer from '../Redux/FetchStats';
+import detailsReducer from '../Redux/FetchDtails'
 
 const store = configureStore({
     reducer: {
-        players: playersReducer
+        cryptos: cryptoReducer,
+        details: detailsReducer
     },
 })
 

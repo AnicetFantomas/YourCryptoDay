@@ -1,40 +1,37 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
-const baseUrl = 'https://www.balldontlie.io/api/v1/players'
+const baseUrl = 'https://api.binance.com/api/v1/ticker/24hr'
 
-export const fetchPlayers = createAsyncThunk(
-    'stats/FETCH_PLAYER',
+export const fetchCrypto = createAsyncThunk(
+    'currency/FETCH_CRYPTO',
     async () => {
         const res = await fetch(baseUrl);
         const data = await res.json();
-        const dataObj = data.data;
-        // console.log(dataObj);
-        const getData = dataObj.map((player) => ({
-            id: player.id,
-            firstN: player.first_name,
-            lastN: player.last_name,
-            team: player.team.full_name
+        // console.log(data);
+        const getData = data.map((crypto) => ({
+            cryptoSymb: crypto.symbol,
+            priceChangePercent: crypto.priceChangePercent,
         }));
         return getData;
     }  
 )
 
-export const playerSlice = createSlice({
-    name: 'reduce/FETCH_PLAYER',
+export const cryptoSlice = createSlice({
+    name: 'reduce/FETCH_CRYPTO',
     initialState:[],
     reducers: {
-        updatePlayer: (state, action) => state.map((player) => {
-            if(player.id === action.payload) {
-                return {...player}
+        updateCrypto: (state, action) => state.map((crypto) => {
+            if(crypto.id === action.payload) {
+                return {...crypto}
             }
-            return player
+            return crypto
         })
         ,
     },
     extraReducers: {
-        [fetchPlayers.fulfilled]: (state, action) => action.payload,
+        [fetchCrypto.fulfilled]: (state, action) => action.payload,
     },
 });
 
-export const { updatePlayer } = playerSlice.actions;
-export default playerSlice.reducer;
+export const { updateCrypto } = cryptoSlice.actions;
+export default cryptoSlice.reducer;
