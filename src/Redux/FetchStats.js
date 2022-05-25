@@ -11,6 +11,7 @@ export const fetchCrypto = createAsyncThunk(
         const getData = data.map((crypto) => ({
             cryptoSymb: crypto.symbol,
             priceChangePercent: crypto.priceChangePercent,
+            prevClosePrice: crypto.prevClosePrice
         }));
         return getData;
     }  

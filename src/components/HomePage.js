@@ -1,6 +1,7 @@
 import React from 'react';
 import { useEffect } from 'react';
 import './Styles/Home.css'
+import arrow from './Images/arrow.png'
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchCrypto } from '../Redux/FetchStats';
 
@@ -18,9 +19,14 @@ const HomePage = () => {
             <ul>
                 {getAllCryptos.map((crypto) => (
                 <li key={crypto.cryptoSymb}>
-                 {crypto.cryptoSymb}  
-                 {crypto.priceChangePercent}%
-                </li>))}
+                <div ><img src={arrow} className="image" /></div>
+                <div className="text-container">
+                <div className="symbole">{crypto.cryptoSymb}</div>  
+                 <span>{crypto.priceChangePercent}%</span>
+                 <p>{crypto.prevClosePrice}</p>
+                </div>
+                </li>
+                ))}
             </ul>
         </div>
     );

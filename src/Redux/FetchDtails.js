@@ -20,7 +20,6 @@ export const fetchCryptoDetails = createAsyncThunk(
             bidQty: detail.bidQty,
             askPrice: detail.askPrice,
             askQty: detail.askQty,
-            askQty: detail.askQty,
             highPrice: detail.highPrice,
             lowPrice: detail.lowPrice,
             volume: detail.volume

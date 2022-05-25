@@ -1,5 +1,7 @@
 import './App.css';
+
 import HomePage from './components/HomePage';
+
 // import ShowDetails from './components/ShowDetails';
 
 function App() {
