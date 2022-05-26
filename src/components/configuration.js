@@ -1,12 +1,10 @@
-import { configureStore } from "@reduxjs/toolkit";
-import cryptoReducer from '../Redux/FetchStats';
-import detailsReducer from '../Redux/FetchDtails'
+import { configureStore } from '@reduxjs/toolkit';
+import cryptoaReducer from '../Redux/FetchDtails';
 
 const store = configureStore({
-    reducer: {
-        cryptos: cryptoReducer,
-        details: detailsReducer
-    },
-})
+  reducer: {
+    cryptos: cryptoaReducer,
+  },
+});
 
 export default store;

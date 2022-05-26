@@ -6,24 +6,22 @@
     box-sizing: border-box;
 }
 
-ul {
+.samples-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
 }
 
-ul > li{
-    list-style: none;
-    height: 200px;
-}
-
-li {
+.sample {
     background-color: #3D61A4;
     color: aliceblue;
     text-align: right;
+    list-style: none;
+    height: 200px;
+    text-decoration: none;
 }
 
-ul > li:nth-child(odd) {
+.sample:nth-child(odd) {
     background-color: #4268AF;
 }
 
@@ -42,6 +40,7 @@ ul > li:nth-child(odd) {
 
 .text-container {
     font-family: 'Arvo', serif;
-    padding-top: 15%;
+    padding-top: 10%;
     padding-right: 4%;
+    font-size: 20px;
 }
