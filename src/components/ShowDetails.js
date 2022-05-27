@@ -1,11 +1,12 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import './Styles/details.css';
 import { Link, useParams } from 'react-router-dom';
 import { fetchCryptoDetails } from '../Redux/FetchDtails';
+import backHomeImg from './Images/back.png';
 
 const ShowDetails = () => {
   const getAllDetails = useSelector((state) => state.cryptos);
-  console.log(getAllDetails);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -17,11 +18,35 @@ const ShowDetails = () => {
 
   return (
     <div>
-      <h1>Hello World</h1>
       {cryptos.map((detail) => (
         <div key={detail.cryptoSymb} className="details">
-          <div>{detail.cryptoSymb}</div>
-          <ul>
+          <div className="back-link">
+            <Link to="/">
+              <img className="backHome" src={backHomeImg} alt="back-icon" />
+            </Link>
+          </div>
+          <div className="detail-header">
+            <div className="symbol">
+              <div className="symbol-headline">{detail.cryptoSymb}</div>
+              <div className="prices">
+                <div> Prices today:</div>
+                {' '}
+                <div className="prices-para">
+                  <p>
+                    High:
+                    {' '}
+                    {detail.highPrice}
+                  </p>
+                  <p>
+                    Low:
+                    {' '}
+                    {detail.lowPrice}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ul className="list-container">
             <li>
               <p className="placeholder">Price change:</p>
               <p className="detail-data">{detail.priceChange}</p>
@@ -43,32 +68,24 @@ const ShowDetails = () => {
               <p className="detail-data">{detail.lastPrice}</p>
             </li>
             <li>
-              <p className="placeholder">lastQty: </p>
+              <p className="placeholder">last Quantity: </p>
               <p className="detail-data">{detail.lastQty}</p>
             </li>
             <li>
-              <p className="placeholder">bidPrice: </p>
+              <p className="placeholder">bid Price: </p>
               <p className="detail-data">{detail.bidPrice}</p>
             </li>
             <li>
-              <p className="placeholder">bidQty: </p>
+              <p className="placeholder">bid Quantity: </p>
               <p className="detail-data">{detail.bidQty}</p>
             </li>
             <li>
-              <p className="placeholder">askPrice: </p>
+              <p className="placeholder">ask Price: </p>
               <p className="detail-data">{detail.askPrice}</p>
             </li>
             <li>
-              <p className="placeholder">askQty: </p>
+              <p className="placeholder">ask Quantity: </p>
               <p className="detail-data">{detail.askQty}</p>
-            </li>
-            <li>
-              <p className="placeholder">highPrice: </p>
-              <p className="detail-data">{detail.highPrice}</p>
-            </li>
-            <li>
-              <p className="placeholder">lowPrice: </p>
-              <p className="detail-data">{detail.lowPrice}</p>
             </li>
             <li>
               <p className="placeholder">volume: </p>

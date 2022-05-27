@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`missions Component test Renders Mission Row 1`] = `
+Array [
+  <div
+    className="logo-container"
+  >
+    <div
+      className="logo"
+    >
+      Your
+      <span>
+        Crypto
+      </span>
+      Day
+    </div>
+    <div>
+      <img
+        alt="user-icon"
+        className="user-icon"
+        src="user.png"
+      />
+    </div>
+  </div>,
+  <div
+    className="header"
+  >
+    <div
+      className="header-text"
+    >
+      <p>
+        Start The day with coffee,
+      </p>
+      <p>
+        End The day with crypto
+      </p>
+    </div>
+  </div>,
+  <div>
+    <div
+      className="search-container"
+    >
+      <p
+        className="top-cryptos"
+      >
+        Top 50 current cryptos
+      </p>
+      <div
+        className="search-box"
+      >
+        <input
+          className="input"
+          onChange={[Function]}
+          placeholder="search..."
+          type="search"
+          value=""
+        />
+        <div
+          className="search-img-cont"
+        >
+          <img
+            alt="search-icon"
+            className="search-icon"
+            src="search.png"
+          />
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div
+    className="samples-container"
+  />,
+]
+`;

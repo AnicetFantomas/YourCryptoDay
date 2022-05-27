@@ -7,7 +7,6 @@ export const fetchCryptoDetails = createAsyncThunk(
   async () => {
     const res = await fetch(baseUrl);
     const data = await res.json();
-    console.log(data);
     const getData = data.map((detail) => ({
       cryptoSymb: detail.symbol,
       priceChange: detail.priceChange,
