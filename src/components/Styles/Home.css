@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=BIZ+UDPGothic:wght@700&family=Josefin+Sans:wght@300;400;700&family=Lobster&family=Oleo+Script+Swash+Caps:wght@700&family=Open+Sans:wght@600&family=Prompt:wght@300&family=Questrial&family=Radio+Canada:wght@500;600&family=Roboto+Slab&family=Rubik:wght@700&family=Source+Serif+Pro:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=BIZ+UDPGothic:wght@700&family=Josefin+Sans:wght@300;400;700&family=Lobster&family=Merriweather+Sans:ital,wght@1,700&family=Oleo+Script+Swash+Caps:wght@700&family=Open+Sans:wght@600&family=Prompt:wght@300&family=Questrial&family=Radio+Canada:wght@500;600&family=Roboto+Slab&family=Rubik:wght@700&family=Source+Serif+Pro:wght@600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    height: 300px;
+    background: url('https://media.giphy.com/media/m3XqQ8QhuIUuQau7n5/giphy.gif'),linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(48,9,117,1) 0%, rgba(50,9,121,0.8687850140056023) 0%, rgba(46,8,115,1) 31%, rgba(39,7,101,1) 37%, rgba(48,9,118,1) 43%, rgba(38,7,99,1) 43%, rgba(41,7,105,1) 46%, rgba(46,8,114,1) 50%, rgba(44,13,118,1) 54%, rgba(38,27,129,1) 59%, rgba(50,9,120,1) 65%, rgba(41,23,127,1) 67%, rgba(47,11,119,1) 70%, rgba(36,60,152,1) 77%, rgba(0,212,255,1) 99%);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.logo-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #335CFA;
+    height: 50px;
+    font-family: 'Lobster', cursive;
+}
+
+.logo {
+    font-size: 25px;
+    cursor: pointer;
+    align-self: center;
+}
+
+.logo span {
+    color:rgba(240, 248, 255, 0.932);
+}
+
+.user-icon {
+    width: 25px;
+    cursor: pointer;
+    border-radius: 50%;
+    align-self: center;
+}
+ 
+.header-text {
+    float: right;
+    color: #fff;
+    font-weight: bold;
+    font-size: 35px;
+    margin: 7%;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+.samples-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    width: auto;
+}
+
+.search-container {
+    display: flex;
+    background-color: #000;
+    justify-content: space-between;
+    padding: 1%; 
+    color: aliceblue;
+    font-size: 25px;
+}
+
+.search-container p {
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(148, 147, 147);
+}
+
+.search-box {
+    display: flex;
+    width: 25%;
+    justify-content: space-between;
+}
+
+.input {
+    background-color: #fff;
+    padding-right: 1%;
+    border-radius: 50px;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.search-img-cont {
+    background-color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+}
+
+.search-icon {
+    width: 20px;
+    align-self: center;
+    margin-left: 3px;
+}
+
+.sample {
+    background-color: #5e7091;
+    color: aliceblue;
+    text-align: right;
+    list-style: none;
+    height: 200px;
+    text-decoration: none;
+}
+
+.sample:nth-child(odd) {
+    background-color: #4267f8;
+}
+
+.symbole {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.image {
+    background-color: #fff;
+    width: 32px;
+    border-radius: 50px;
+    margin: 4%;
+    cursor: pointer;
+}
+
+.text-container {
+    font-family: 'Arvo', serif;
+    padding-top: 10%;
+    padding-right: 4%;
+    font-size: 20px;
+}
+
+.text-container span {
+    color: aqua;
+}
+
+.text-container p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media screen and (max-width: 630px) {
+    .header {
+        height: 200px;
+        background: url('https://media.giphy.com/media/m3XqQ8QhuIUuQau7n5/giphy.gif'),rgba(0, 0, 0, 0.781);
+    }
+
+    .search-box {
+        width: 100%;
+    }
+
+    .input {
+        width: 90%;
+    }
+
+    .header-text {
+        font-size: 18px;
+        margin-top: 120px;
+        float: left;
+    }
+
+    .sample {
+        height: max-content;
+        font-size: 10px;
+        padding-bottom: 3px;
+        border: 1px solid black;
+    }
+
+    .sample:nth-child(n+1) {
+    background-color: #4267f8;
+    }
+
+    .top-cryptos {
+        display: none;
+    }
+
+    .image {
+        width: 20px;
+    }
+
+    .symbole {
+        font-size: 12px;
+    }
+    
+    .samples-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .text-container span {
+        font-size: 8px;
+    } 
+
+}
