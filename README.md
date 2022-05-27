@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+![](https://img.shields.io/badge/Microverse-blueviolet)
+![](https://img.shields.io/badge/React-blue)
+![](https://img.shields.io/badge/Redux-red)
+![](https://img.shields.io/badge/Sass-pink)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#Crypto-Expence-Tracker
 
-## Available Scripts
+The crypto is a capstone built with React/redux, SASS, and the `coinbase` API.
+It helps them to keep an eye on the top trends on the market, crypto prices, and all their details.
 
-In the project directory, you can run:
+## Screenchot
 
-### `npm start`
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/80612925/158625981-07295955-cb04-484e-87f2-fa66685ce871.gif)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Demo Link
+[crypto-currency](https://reverent-dubinsky-40ea41.netlify.app/)
+## Loom Link
+[My presentaion](https://www.loom.com/share/8321c3cf330c4a9baa42719612c85b2a)
+## Built With
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  ```bash
+  - React/Redux
+  - SASS(SCSS)
+  - Jest
+  - React Linters.
+  - Git.
+  ```
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To get a local copy up and running follow these simple example steps.
 
-### `npm run build`
+### Prerequisites
+ - A text editor(preferably Visual Studio Code)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Install
+  -  [Git](https://git-scm.com/downloads)
+  -  [Node](https://nodejs.org/en/download/)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Usage
+#### Clone this repository
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+https://github.com/AnicetFantomas/YourCryptoDay.git
 
-### `npm run eject`
+`cd YourCryptoDay`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#### Run project
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+$ npm install
+$ npm run test
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#### Open page in browser
+```bash
+$ npm start
+$ runs on http://localhost:3000/
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Author
 
-## Learn More
+**Anicet Murhula**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- GitHub: [@AnicetFantomas](https://github.com/AnicetFantomas)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- LinkedIn: [Anicet Murhula](https://www.linkedin.com/in/anicet-murhula-13a1b0220/)
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🤝 Contributing
 
-### Analyzing the Bundle Size
+Contributions, issues, and feature requests are welcome!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Feel free to check the [issues page](https://github.com/clintonjosephs/Stock-metrics/issues).
 
-### Making a Progressive Web App
+## Acknowledgement
+Design inspired from [Nelson Sakwa on Behance](https://www.behance.net/gallery/31579789/Ballhead-App-%28Free-PSDs%29).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Show your support
 
-### Advanced Configuration
+Give a ⭐️ if you like this project!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 📝 License
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is [MIT](https://opensource.org/licenses/MIT) licensed.

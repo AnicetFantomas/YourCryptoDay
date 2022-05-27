@@ -1,100 +1,101 @@
 .detail-header {
-    width: 100%;
-    height: 300px;
-    background: url('https://www.thestatesman.com/wp-content/uploads/2021/06/crypto-iStock-1024x683.jpg'),linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(48,9,117,1) 0%, rgba(50,9,121,0.8687850140056023) 0%, rgba(46,8,115,1) 31%, rgba(39,7,101,1) 37%, rgba(48,9,118,1) 43%, rgba(38,7,99,1) 43%, rgba(41,7,105,1) 46%, rgba(46,8,114,1) 50%, rgba(44,13,118,1) 54%, rgba(38,27,129,1) 59%, rgba(50,9,120,1) 65%, rgba(41,23,127,1) 67%, rgba(47,11,119,1) 70%, rgba(36,60,152,1) 77%, rgba(0,212,255,1) 99%);
-    background-repeat: no-repeat;
-    background-size: contain;
+  width: 100%;
+  height: 300px;
+  background: url('https://www.thestatesman.com/wp-content/uploads/2021/06/crypto-iStock-1024x683.jpg'), linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(48, 9, 117, 1) 0%, rgba(50, 9, 121, 0.8687850140056023) 0%, rgba(46, 8, 115, 1) 31%, rgba(39, 7, 101, 1) 37%, rgba(48, 9, 118, 1) 43%, rgba(38, 7, 99, 1) 43%, rgba(41, 7, 105, 1) 46%, rgba(46, 8, 114, 1) 50%, rgba(44, 13, 118, 1) 54%, rgba(38, 27, 129, 1) 59%, rgba(50, 9, 120, 1) 65%, rgba(41, 23, 127, 1) 67%, rgba(47, 11, 119, 1) 70%, rgba(36, 60, 152, 1) 77%, rgba(0, 212, 255, 1) 99%);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .prices {
-    font-size: 25px;
-    margin-top: 30px;
-    display: flex;
+  font-size: 25px;
+  margin-top: 30px;
+  display: flex;
 }
 
 .prices-para {
-    color: aqua;
-    margin-left: 40px;
+  color: aqua;
+  margin-left: 40px;
 }
 
 .back-link {
-    background-color: #335CFA;
-    height: 50px;
-    width: 100%;
-    display: flex;
+  background-color: #335cfa;
+  height: 50px;
+  width: 100%;
+  display: flex;
 }
 
 .backHome {
-    width: 10%;
-    padding: 5px;
+  width: 10%;
+  padding: 5px;
 }
 
 .symbol {
-    font-size: 50px;
-    color: #ffffff;
-    margin: 4% 10%;
-    float: right;
-    font-family: 'Arvo', serif;
-    margin-bottom: 40px;
+  font-size: 50px;
+  color: #fff;
+  margin: 4% 10%;
+  float: right;
+  font-family: 'Arvo', serif;
+  margin-bottom: 40px;
 }
 
 .list-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .list-container li {
-    display: flex;
-    height: 60px;
-    background-color: #3D61A4;
-    justify-content: space-between;
-    padding: 0 3%;
+  display: flex;
+  height: 60px;
+  background-color: #3d61a4;
+  justify-content: space-between;
+  padding: 0 3%;
 }
 
 .list-container li:nth-child(odd) {
-    background-color: #4268AF;
+  background-color: #4268af;
 }
 
-.placeholder, .detail-data {
-    font-size: 22px;
-    font-weight: bold;
-    color: aliceblue;
-    align-self: center;
-    font-family: 'Open Sans', sans-serif;
+.placeholder,
+.detail-data {
+  font-size: 22px;
+  font-weight: bold;
+  color: aliceblue;
+  align-self: center;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .detail-data {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: aqua;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: aqua;
 }
 
-
 @media screen and (max-width: 630px) {
-    .symbol-headline {
-        font-size: 25px;
-    }
+  .symbol-headline {
+    font-size: 25px;
+  }
 
-    .backHome {
-        width: 10%;
-        align-self: center;
-    }
+  .backHome {
+    width: 10%;
+    align-self: center;
+  }
 
-    .detail-header {
-        height: 150px;
-        overflow: hidden;
-    }
+  .detail-header {
+    height: 150px;
+    overflow: hidden;
+  }
 
-    .prices {
-        font-size: 12px;
-        flex-direction: column;
-    }
+  .prices {
+    font-size: 12px;
+    flex-direction: column;
+  }
 
-    .prices-para {
-        margin: 0;
-    }
+  .prices-para {
+    margin: 0;
+  }
 
-    .placeholder, .detail-data {
-        font-size: 18px;
-    }
+  .placeholder,
+  .detail-data {
+    font-size: 18px;
+  }
 }
