@@ -20,7 +20,7 @@ const ShowDetails = () => {
     <div>
       {cryptos.map((detail) => (
         <div key={detail.cryptoSymb} className="details">
-          <div className="back-link">
+          <div className="back-link d-flex">
             <Link to="/">
               <img className="backHome" src={backHomeImg} alt="back-icon" />
             </Link>
@@ -28,7 +28,7 @@ const ShowDetails = () => {
           <div className="detail-header">
             <div className="symbol">
               <div className="symbol-headline">{detail.cryptoSymb}</div>
-              <div className="prices">
+              <div className="prices d-flex">
                 <div> Prices today:</div>
                 {' '}
                 <div className="prices-para">
@@ -46,7 +46,7 @@ const ShowDetails = () => {
               </div>
             </div>
           </div>
-          <ul className="list-container">
+          <ul className="list-container d-flex">
             <li>
               <p className="placeholder">Price change:</p>
               <p className="detail-data">{detail.priceChange}</p>

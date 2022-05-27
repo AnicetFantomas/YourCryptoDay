@@ -16,7 +16,6 @@
 }
 
 .logo-container {
-  display: flex;
   width: 100%;
   justify-content: space-between;
   padding: 20px;
@@ -28,7 +27,6 @@
 .logo {
   font-size: 25px;
   cursor: pointer;
-  align-self: center;
 }
 
 .logo span {
@@ -39,7 +37,6 @@
   width: 25px;
   cursor: pointer;
   border-radius: 50%;
-  align-self: center;
 }
 
 .header-text {
@@ -49,7 +46,6 @@
   font-size: 35px;
   margin: 7%;
   font-family: 'Open Sans', sans-serif;
-  text-align: center;
 }
 
 .samples-container {
@@ -60,7 +56,6 @@
 }
 
 .search-container {
-  display: flex;
   background-color: #000;
   justify-content: space-between;
   padding: 1%;
@@ -74,7 +69,6 @@
 }
 
 .search-box {
-  display: flex;
   width: 25%;
   justify-content: space-between;
 }
@@ -93,12 +87,10 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  display: flex;
 }
 
 .search-icon {
   width: 20px;
-  align-self: center;
   margin-left: 3px;
 }
 
@@ -141,6 +133,14 @@
 
 .text-container p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.disp-flex {
+  display: flex;
+}
+
+.asef-center {
+  align-self: center;
 }
 
 @media screen and (max-width: 630px) {

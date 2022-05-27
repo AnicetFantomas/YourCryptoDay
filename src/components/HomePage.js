@@ -25,24 +25,24 @@ const HomePage = () => {
 
   return (
     <>
-      <div className="logo-container">
-        <div className="logo">
+      <div className="logo-container disp-flex">
+        <div className="logo asef-center">
           Your
           <span>Crypto</span>
           Day
         </div>
-        <div><img className="user-icon" src={userIcon} alt="user-icon" /></div>
+        <div><img className="user-icon asef-center" src={userIcon} alt="user-icon" /></div>
       </div>
       <div className="header">
-        <div className="header-text">
+        <div className="header-text asef-center">
           <p>Start The day with coffee,</p>
           <p>End The day with crypto</p>
         </div>
       </div>
       <div>
-        <div className="search-container">
+        <div className="search-container disp-flex">
           <p className="top-cryptos">Top 50 current cryptos</p>
-          <div className="search-box">
+          <div className="search-box disp-flex">
             <input
               type="search"
               placeholder="search..."
@@ -50,7 +50,7 @@ const HomePage = () => {
               value={initialSearch}
               className="input"
             />
-            <div className="search-img-cont"><img className="search-icon" src={searchIcon} alt="search-icon" /></div>
+            <div className="search-img-cont disp-flex"><img className="search-icon asef-center" src={searchIcon} alt="search-icon" /></div>
           </div>
         </div>
       </div>

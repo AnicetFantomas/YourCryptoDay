@@ -9,7 +9,6 @@
 .prices {
   font-size: 25px;
   margin-top: 30px;
-  display: flex;
 }
 
 .prices-para {
@@ -21,7 +20,6 @@
   background-color: #335cfa;
   height: 50px;
   width: 100%;
-  display: flex;
 }
 
 .backHome {
@@ -40,7 +38,6 @@
 
 .list-container {
   width: 100%;
-  display: flex;
   flex-direction: column;
 }
 
@@ -68,6 +65,10 @@
 .detail-data {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: aqua;
+}
+
+.d-flex {
+  display: flex;
 }
 
 @media screen and (max-width: 630px) {
