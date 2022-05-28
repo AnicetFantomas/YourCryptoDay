@@ -3,10 +3,10 @@
 exports[`missions Component test Renders Mission Row 1`] = `
 Array [
   <div
-    className="logo-container"
+    className="logo-container disp-flex"
   >
     <div
-      className="logo"
+      className="logo asef-center"
     >
       Your
       <span>
@@ -17,7 +17,7 @@ Array [
     <div>
       <img
         alt="user-icon"
-        className="user-icon"
+        className="user-icon asef-center"
         src="user.png"
       />
     </div>
@@ -26,7 +26,7 @@ Array [
     className="header"
   >
     <div
-      className="header-text"
+      className="header-text asef-center"
     >
       <p>
         Start The day with coffee,
@@ -38,7 +38,7 @@ Array [
   </div>,
   <div>
     <div
-      className="search-container"
+      className="search-container disp-flex"
     >
       <p
         className="top-cryptos"
@@ -46,7 +46,7 @@ Array [
         Top 50 current cryptos
       </p>
       <div
-        className="search-box"
+        className="search-box disp-flex"
       >
         <input
           className="input"
@@ -56,11 +56,11 @@ Array [
           value=""
         />
         <div
-          className="search-img-cont"
+          className="search-img-cont disp-flex"
         >
           <img
             alt="search-icon"
-            className="search-icon"
+            className="search-icon asef-center"
             src="search.png"
           />
         </div>

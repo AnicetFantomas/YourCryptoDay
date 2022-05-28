@@ -1,15 +1,15 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { Provider } from 'react-redux';
-import store from '../configuration';
-import ShowDetails from '../ShowDetails';
+import store from '../components/configuration';
+import HomePage from '../components/HomePage';
 
 describe('missions Component test', () => {
   it('Renders Mission Row', () => {
     const app = renderer
       .create(
         <Provider store={store}>
-          <ShowDetails />
+          <HomePage />
         </Provider>,
       )
       .toJSON();
